@@ -63,7 +63,7 @@ const LoginPage = () => {
     try {
       console.log('Sending request to API...');
       const response = await fetch(
-        isLogin ? '/api/auth/login' : '/api/auth/signup',
+        isLogin ? 'http://quizapi.cyberbots.in/api/auth/login' : 'http://quizapi.cyberbots.in/api/auth/signup',
         {
           method: 'POST',
           headers: {
